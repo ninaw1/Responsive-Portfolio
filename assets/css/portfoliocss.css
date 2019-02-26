@@ -1,0 +1,211 @@
+/* Portfolio CSS */
+/* HTML Elements */
+
+* {
+	box-sizing: border-box
+}
+ß
+html {
+	position: relative
+}
+
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #777777;
+	background-color: #efefef;
+	background: #efefef url("../images/sakura.png")
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: #4aaaa5
+}
+
+/* Header */
+
+header {
+	width: 100%;
+	height: auto;
+	background-color: #ffffff
+}
+
+header .container { 
+	width: 1000px;
+	margin: 0 auto 
+}
+
+/* Overall Layout */
+
+.nav {
+	width: 23em;
+	text-align: right;
+	color: #ffffff;
+	font-weight: normal;
+	margin-left: -6em;
+	background-color: #4aaaa5;
+	background-image: linear-gradient(to right, #4aaaa5, rgb(183, 235, 252))
+}
+
+.logo {
+	display: inline-block;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-weight: bold;
+	font-size: 2em;
+	letter-spacing: 0.04em;
+	color: #ffffff;
+	padding: 0.6em;
+	background-color: #4aaaa5;
+	background-image: linear-gradient(to right, #4aaaa5, rgb(183, 235, 252))
+}
+
+.nav ul li a:hover {
+	color: lightpink;
+}
+
+.page-title {
+	font-weight:bold;
+	font-size: 2em;
+	letter-spacing: 0.04em;
+	margin-bottom: 1em;
+	margin-left: .9em;
+	border-bottom: 1px solid lightgrey
+}
+
+.main-image {
+	float: left;
+	padding: 0 1em 1em 0;
+	width: 160px;
+	height: 240px
+}
+
+/* Portfolio CSS */
+.portfolio-item {
+	display: inline-block;
+	position: relative;
+}
+
+.portfolio-item:hover{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+	
+.item-name {
+	position: relative;
+	top: -130px;
+	text-align: center;
+	padding: 0.5em;
+	color: #ffffff;
+	font-size:25px;
+	width: 270px;
+	margin-left: auto;
+	background-color: #4aaaa5;
+	font-family: 'Cedarville Cursive', cursive;
+	opacity: 0.8
+}
+
+.item-name:hover {
+	opacity: 1
+}
+
+.content {
+	width: 930px;
+	height: 1220px;
+	background-color: white;
+	margin-top: 5em;
+	margin-left: 16em
+}
+
+img {
+	height: 270px;
+	width: 270px;
+	margin-left: 2em
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+    font-size: 0.8em;
+    color: #cccccc;
+    background-color: #666666;
+    border-top: 7px solid #4aaaa5
+}
+
+/* Media Inqueries start here */
+
+@media screen and (max-width: 980px) {
+	.content {
+		margin-left: 1em;
+	}
+	.portfolio-item {
+		width: 70%;
+	}
+	.item-name {
+		margin-left: 1.1em;
+	}
+	.logo {
+		width: auto;
+	}
+	.nav {
+		margin-left: -15em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.content {
+		margin-left: 1em;
+	}
+	.contact {
+		width: 60%;
+	}
+	.main {
+		width: 60%;
+	}
+	.nav {
+		margin-left: -29em;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	img {
+		height: 150px;
+		width: 150px;
+	}
+	.item-name {
+		width: 150px;
+		padding: 0.1em;
+		margin-top: 2.7em;
+	}
+	.content {
+		margin-left: 1em;
+		width: 600px;
+	}
+	.contact {
+		width: 40%;
+	}
+	.main {
+		width: 40%;
+	}
+	.nav {
+		margin-left: -40em;
+	}
+	.logo{
+		font-size: 1em;
+		padding: 1.8em 0.2em;
+	}
+}
+
+/* Mobile Screen Display */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}

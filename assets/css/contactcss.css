@@ -1,0 +1,179 @@
+/* Contact Sheet CSS */
+/* HTML Elements */
+
+* {
+	box-sizing: border-box
+}
+
+html {
+	position: relative
+}
+
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #777777;
+	background-color: #efefef;
+	background: #efefef url("../images/sakura.png")
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: #4aaaa5
+}
+
+/* Header */
+header {
+/* 	width: 100%; */
+/* 	height: auto; */
+/* 	border-bottom: 2px solid #cccccc; */
+	background-color: #ffffff
+}
+
+header .container { 
+	width: 1000px;
+	margin: 0 auto 
+}
+
+/* Overall Layout */
+
+.nav {
+	width: 23em;
+	text-align: right;
+	color: #ffffff;
+	font-weight: normal;
+	margin-left: -6em;
+	background-color: #4aaaa5;
+	background-image: linear-gradient(to right, #4aaaa5, rgb(183, 235, 252))
+}
+
+.nav ul li {
+	display: inline-block;
+	padding-left: 1em;
+	margin-left: 1em
+}
+
+.logo {
+	display: inline-block;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-weight: bold;
+	font-size: 2em;
+	letter-spacing: 0.04em;
+	color: #ffffff;
+	padding: 0.6em;
+	background-color: #4aaaa5;
+	background-image: linear-gradient(to right, #4aaaa5, rgb(183, 235, 252))
+}
+
+.nav ul li a:hover {
+	color: lightpink;
+}
+
+.page-title {
+	font-weight:bold;
+	font-size: 1.5em;
+	letter-spacing: 0.04em;
+	margin-bottom: 0.5em;
+	margin-top: auto
+}
+
+/* Main Content */
+
+.content {
+	width:1000px;
+    margin: auto;
+}
+
+.main {
+	width: 930px;
+	margin-top: 5em;
+	padding: 40px;
+	background-color: #ffffff;
+	border: 1px solid #dddddd
+}
+
+input [type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize:vertical
+}
+
+.btn {
+	transition: width 100px;
+	-webkit-transition: width 100px;
+	-moz-transition: width 100px;
+	-ms-transition: width 100px;
+	-o-transition: width 100px;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+    font-size: 0.8em;
+    color: #cccccc;
+    background-color: #666666;
+    border-top: 7px solid #4aaaa5
+}
+
+/* Media Inqueries start here */
+
+@media screen and (max-width: 980px) {
+	.contact {
+		width: 80%;
+		}
+	.main {
+		width: 80%;
+	}
+	.logo {
+		width: auto;
+	}
+	.nav {
+		margin-left: -15em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.contact {
+		width: 60%;
+	}
+	.main {
+		width: 60%;
+	}
+	.nav {
+		margin-left: -29em;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.contact {
+		width: 40%;
+	}
+	.main {
+		width: 40%;
+	}
+	.nav {
+		margin-left: -40em;
+	}
+	.logo{
+		font-size: 1em;
+		padding: 1.8em 0.2em;
+	}
+	input [type=text] {
+		font-size: 1em;
+	}	
+}
+
+/* Mobile Screen Display */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
